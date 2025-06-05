@@ -13,8 +13,7 @@ TagManager:
   - UI
   - Ground
   - 
-  - player
-  - projectile
+  - Player
   - 
   - 
   - 
@@ -35,11 +34,15 @@ TagManager:
   - 
   - 
   - 
-  - NPC
+  - 
+  - 
   - Camera
   m_SortingLayers:
   - name: Background
     uniqueID: 2766579207
+    locked: 0
+  - name: Ground/Walls
+    uniqueID: 2326486317
     locked: 0
   - name: Default
     uniqueID: 0

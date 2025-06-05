@@ -6,7 +6,7 @@ using UnityEngine;
         {
             PlayerController controller = other.GetComponent<PlayerController>();
             
-            if (controller != null && controller.health < controller.maxHealth)
+            if (controller != null && controller.Health < controller.maxHealth)
             {
                     controller.ChangeHealth(1);
                     Destroy(gameObject);

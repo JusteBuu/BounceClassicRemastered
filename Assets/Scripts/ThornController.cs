@@ -25,7 +25,7 @@ using UnityEngine;
             {
                 controller.ChangeHealth(-1);
                 Pop();
-                Invoke("ResetBallPosition", 3);
+                Invoke(nameof(ResetBallPosition), 3);
             }
         }
 
