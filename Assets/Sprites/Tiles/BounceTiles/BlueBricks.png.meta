@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e7efce7059e633640b5bdb819299f1a6
+guid: a291e87cc9e3c5c47a61ab44f1fd3238
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7835665532679491689
-    second: ui_ne_ground_block@2x_0
+      213: -684439832005838129
+    second: BlueBricks_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ui_ne_ground_block@2x_0
+      name: BlueBricks_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
-        height: 80
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 960122e6940edbc60800000000000000
-      internalID: 7835665532679491689
+      spriteID: fcaf92f59916086f0800000000000000
+      internalID: -684439832005838129
       vertices: []
       indices: 
       edges: []

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7fc2851ea8f89f1439ee9eed903fd16c
+guid: 5e41a2a2803c49447a4f98477820c2ce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2812697907495408609
-    second: ui_ne_ground_block@3x_0
+      213: 5481530076510054454
+    second: ColourWater_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ui_ne_ground_block@3x_0
+      name: ColourWater_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 120
-        height: 120
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e39fb438d5b80720800000000000000
-      internalID: 2812697907495408609
+      spriteID: 638600cef8e421c40800000000000000
+      internalID: 5481530076510054454
       vertices: []
       indices: 
       edges: []
