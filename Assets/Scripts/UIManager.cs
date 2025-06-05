@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
@@ -7,6 +8,8 @@ public class UIManager : MonoBehaviour
     public GameObject life3;
     public GameObject life4;
     public GameObject life5;
+    
+    public TextMeshProUGUI ringsCounter;
 
     public void UpdateLives(int currentHealth)
     {
@@ -15,5 +18,10 @@ public class UIManager : MonoBehaviour
         life3.SetActive(currentHealth >= 3);
         life4.SetActive(currentHealth >= 4);
         life5.SetActive(currentHealth >= 5);
+    }
+    
+    public void UpdateRings(int collected, int total)
+    {
+        ringsCounter.text = $"{collected}/{total}";
     }
 }

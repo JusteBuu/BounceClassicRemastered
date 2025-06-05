@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     
     public GameObject exitDoor;
     public Transform ringsParent;
+    public UIManager uiManager; 
     
     private int _totalRings;
     private int _ringsCollected = 0;
@@ -14,23 +15,18 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         
-        // Count all rings that are children of ringsParent
-        if (ringsParent != null)
+        if (_totalRings == 0)
         {
-            _totalRings = ringsParent.GetComponentsInChildren<RingCollectible>().Length;
+            _totalRings = GetRingCount();
         }
-        else
-        {
-            Debug.LogWarning("Rings Parent not assigned! Please assign the parent GameObject containing all rings.");
-        }
-        
-        Debug.Log($"Total rings to collect: {_totalRings}");
+
+        uiManager.UpdateRings(_ringsCollected, _totalRings);
     }
     
     public void CollectRing()
     {
         _ringsCollected++;
-        Debug.Log($"Rings collected: {_ringsCollected}/{_totalRings}");
+        uiManager.UpdateRings(_ringsCollected, _totalRings);
         
         if (_ringsCollected >= _totalRings)
         {
@@ -40,11 +36,14 @@ public class GameManager : MonoBehaviour
     
     private void OpenExit()
     {
-        Debug.Log("All rings collected! Exit opened!");
-        
         if (exitDoor != null)
         {
             exitDoor.SetActive(true);
         }
+    }
+
+    private int GetRingCount()
+    {
+        return ringsParent != null ? ringsParent.GetComponentsInChildren<RingCollectible>().Length : 0;
     }
 }
