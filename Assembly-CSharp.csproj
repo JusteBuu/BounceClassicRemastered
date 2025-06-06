@@ -56,9 +56,9 @@
     <Compile Include="Assets\Scripts\Controllers\SpikyController.cs" />
     <Compile Include="Assets\Scripts\Collectables\ExpandCollectible.cs" />
     <Compile Include="Assets\Scripts\Systems\MovementSystem.cs" />
-    <Compile Include="Assets\Scripts\MainMenuManager.cs" />
     <Compile Include="Assets\Scripts\Systems\BallPhysicsSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\GroundDetectionSystem.cs" />
+    <Compile Include="Assets\Scripts\LevelNavigation.cs" />
     <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
     <Compile Include="Assets\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
