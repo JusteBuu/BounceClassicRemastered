@@ -46,15 +46,23 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ThornController.cs" />
-    <Compile Include="Assets\Scripts\HealthCollectible.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Collectables\HealthCollectible.cs" />
+    <Compile Include="Assets\Scripts\Systems\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
-    <Compile Include="Assets\Scripts\RingCollectible.cs" />
-    <Compile Include="Assets\Scripts\DeathPopController.cs" />
+    <Compile Include="Assets\Scripts\Collectables\RingCollectible.cs" />
+    <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\ThornController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\DeathPopController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\SpikyController.cs" />
+    <Compile Include="Assets\Scripts\Collectables\ExpandCollectible.cs" />
+    <Compile Include="Assets\Scripts\Systems\MovementSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\BallPhysicsSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\GroundDetectionSystem.cs" />
+    <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
     <Compile Include="Assets\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\BallController.cs" />
+    <Compile Include="Assets\Scripts\Collectables\BaseCollectable.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />

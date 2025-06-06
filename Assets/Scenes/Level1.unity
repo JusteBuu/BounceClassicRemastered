@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 185372886}
   - component: {fileID: 185372885}
   - component: {fileID: 185372884}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TilemapWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3759,6 +3759,7 @@ GameObject:
   - component: {fileID: 242862438}
   - component: {fileID: 242862437}
   - component: {fileID: 242862439}
+  - component: {fileID: 242862440}
   m_Layer: 31
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3796,7 +3797,7 @@ Camera:
     x: 0
     y: 0.1
     width: 1
-    height: 0.84
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -3844,7 +3845,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6919cd0efe76fcf48b09fb3c98b864a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 628050717}
+  target: {fileID: 0}
+  offset: {x: 0, y: 0, z: 0}
+  lockY: 1
+  lockZ: 1
+--- !u!114 &242862440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242862435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6919cd0efe76fcf48b09fb3c98b864a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 628050719}
+  offset: {x: 0, y: 0, z: 0}
+  lockY: 1
+  lockZ: 1
 --- !u!1 &323766107
 GameObject:
   m_ObjectHideFlags: 0
@@ -4091,7 +4111,8 @@ MonoBehaviour:
   startPosition: {fileID: 1337827698}
   popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
     type: 3}
-  ball: {fileID: 628050717}
+  damage: 1
+  resetDelay: 3
 --- !u!212 &480506536
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4478,18 +4499,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2690c74b9c5044146a071a2709bcca1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 628050721}
-  moveForce: 8
+  maxHealth: 5
+  moveForce: 10
   jumpForce: 10
-  groundCheck: {fileID: 628050719}
+  torqueForce: 1
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   groundCheckRadius: 0.55
-  torqueForce: 1
   uiManager: {fileID: 1589637854}
-  maxHealth: 5
-  currentHealth: 5
 --- !u!50 &628050721
 Rigidbody2D:
   serializedVersion: 5
@@ -4633,7 +4651,8 @@ MonoBehaviour:
   startPosition: {fileID: 1337827698}
   popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
     type: 3}
-  ball: {fileID: 628050717}
+  damage: 1
+  resetDelay: 3
 --- !u!212 &665398407
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4741,8 +4760,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -347.86755, y: -0.70000076}
-  m_SizeDelta: {x: 695.7351, y: 0}
+  m_AnchoredPosition: {x: -347.54022, y: -0.70000076}
+  m_SizeDelta: {x: 695.0804, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &729478448
 MonoBehaviour:
@@ -4757,7 +4776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5513,6 +5532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde6d80bfb340ec46b2ca7e10b71d090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthAmount: 1
 --- !u!1 &1274328046
 GameObject:
   m_ObjectHideFlags: 0
@@ -14514,7 +14534,8 @@ MonoBehaviour:
   startPosition: {fileID: 1337827698}
   popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
     type: 3}
-  ball: {fileID: 628050717}
+  damage: 1
+  resetDelay: 3
 --- !u!212 &1341324620
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14754,7 +14775,8 @@ MonoBehaviour:
   startPosition: {fileID: 1337827698}
   popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
     type: 3}
-  ball: {fileID: 628050717}
+  damage: 1
+  resetDelay: 3
 --- !u!212 &1383982671
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14844,7 +14866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1415999553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16955,6 +16977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde6d80bfb340ec46b2ca7e10b71d090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthAmount: 1
 --- !u!1 &1589637850
 GameObject:
   m_ObjectHideFlags: 0
@@ -17085,7 +17108,8 @@ MonoBehaviour:
   startPosition: {fileID: 1337827698}
   popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
     type: 3}
-  ball: {fileID: 628050717}
+  damage: 1
+  resetDelay: 1
 --- !u!212 &1621054032
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17283,7 +17307,8 @@ MonoBehaviour:
   startPosition: {fileID: 1337827698}
   popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
     type: 3}
-  ball: {fileID: 628050717}
+  damage: 1
+  resetDelay: 3
 --- !u!212 &1635153197
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17571,7 +17596,8 @@ MonoBehaviour:
   startPosition: {fileID: 1337827698}
   popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
     type: 3}
-  ball: {fileID: 628050717}
+  damage: 1
+  resetDelay: 3
 --- !u!212 &1719652676
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17723,7 +17749,8 @@ MonoBehaviour:
   startPosition: {fileID: 1337827698}
   popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
     type: 3}
-  ball: {fileID: 628050717}
+  damage: 1
+  resetDelay: 3
 --- !u!212 &1729705574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17875,7 +17902,8 @@ MonoBehaviour:
   startPosition: {fileID: 1337827698}
   popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
     type: 3}
-  ball: {fileID: 628050717}
+  damage: 1
+  resetDelay: 3
 --- !u!212 &1921006976
 SpriteRenderer:
   m_ObjectHideFlags: 0
