@@ -721,6 +721,8 @@ GameObject:
   m_Component:
   - component: {fileID: 113990465}
   - component: {fileID: 113990466}
+  - component: {fileID: 113990468}
+  - component: {fileID: 113990467}
   m_Layer: 0
   m_Name: Spiky6
   m_TagString: Untagged
@@ -799,6 +801,72 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &113990467
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113990464}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2.4, y: 2.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
+--- !u!114 &113990468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113990464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b24a43a5064c309b3f8eb8f7da694c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  startMovingUp: 1
+  movementRange: 3
+  startPosition: {fileID: 1337827698}
+  popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
+    type: 3}
+  damage: 1
+  resetDelay: 1
 --- !u!1 &118130407
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,6 +957,8 @@ GameObject:
   m_Component:
   - component: {fileID: 182781828}
   - component: {fileID: 182781829}
+  - component: {fileID: 182781831}
+  - component: {fileID: 182781830}
   m_Layer: 0
   m_Name: Spiky4
   m_TagString: Untagged
@@ -967,6 +1037,72 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &182781830
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182781827}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2.4, y: 2.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
+--- !u!114 &182781831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182781827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b24a43a5064c309b3f8eb8f7da694c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  startMovingUp: 1
+  movementRange: 3
+  startPosition: {fileID: 1337827698}
+  popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
+    type: 3}
+  damage: 1
+  resetDelay: 1
 --- !u!1 &199071796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,6 +1404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0238d1d77d09626428ae485714e03c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smallRingSprite: {fileID: 0}
 --- !u!1 &242862435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,6 +1763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0238d1d77d09626428ae485714e03c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smallRingSprite: {fileID: 0}
 --- !u!1 &540885311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1724,6 +1862,8 @@ GameObject:
   m_Component:
   - component: {fileID: 556945259}
   - component: {fileID: 556945260}
+  - component: {fileID: 556945263}
+  - component: {fileID: 556945261}
   m_Layer: 0
   m_Name: Spiky2
   m_TagString: Untagged
@@ -1740,7 +1880,7 @@ Transform:
   m_GameObject: {fileID: 556945258}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.25, y: -3.4, z: 0}
+  m_LocalPosition: {x: -11.25, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1802,6 +1942,72 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &556945261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556945258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b24a43a5064c309b3f8eb8f7da694c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  startMovingUp: 1
+  movementRange: 3
+  startPosition: {fileID: 1337827698}
+  popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
+    type: 3}
+  damage: 1
+  resetDelay: 1
+--- !u!61 &556945263
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556945258}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2.4, y: 2.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &628050717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,7 +2021,7 @@ GameObject:
   - component: {fileID: 628050720}
   - component: {fileID: 628050721}
   - component: {fileID: 628050723}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1907,11 +2113,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   moveForce: 10
-  jumpForce: 15
-  torqueForce: 5
+  jumpForce: 10
+  torqueForce: 1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   groundCheckRadius: 0.55
   uiManager: {fileID: 1629200060}
 --- !u!50 &628050721
@@ -2887,6 +3093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0238d1d77d09626428ae485714e03c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smallRingSprite: {fileID: 0}
 --- !u!1 &958923220
 GameObject:
   m_ObjectHideFlags: 0
@@ -3221,6 +3428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0238d1d77d09626428ae485714e03c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smallRingSprite: {fileID: 0}
 --- !u!1 &1237861182
 GameObject:
   m_ObjectHideFlags: 0
@@ -3369,6 +3577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0238d1d77d09626428ae485714e03c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smallRingSprite: {fileID: 0}
 --- !u!1 &1239905088
 GameObject:
   m_ObjectHideFlags: 0
@@ -17827,7 +18036,7 @@ Transform:
   m_GameObject: {fileID: 1337827697}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.66, y: 2.495, z: 0}
+  m_LocalPosition: {x: 0.35, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18471,6 +18680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0238d1d77d09626428ae485714e03c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smallRingSprite: {fileID: 0}
 --- !u!1 &1555363845
 GameObject:
   m_ObjectHideFlags: 0
@@ -18481,6 +18691,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1555363846}
   - component: {fileID: 1555363847}
+  - component: {fileID: 1555363849}
+  - component: {fileID: 1555363848}
   m_Layer: 0
   m_Name: Spiky5
   m_TagString: Untagged
@@ -18559,6 +18771,72 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1555363848
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555363845}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2.4, y: 2.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
+--- !u!114 &1555363849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555363845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b24a43a5064c309b3f8eb8f7da694c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  startMovingUp: 1
+  movementRange: 3
+  startPosition: {fileID: 1337827698}
+  popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
+    type: 3}
+  damage: 1
+  resetDelay: 1
 --- !u!1 &1587312940
 GameObject:
   m_ObjectHideFlags: 0
@@ -22405,7 +22683,7 @@ GameObject:
   - component: {fileID: 1617663982}
   - component: {fileID: 1617663984}
   - component: {fileID: 1617663983}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spiky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22496,9 +22774,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  moveDistance: 3
   startMovingUp: 1
+  movementRange: 3
+  startPosition: {fileID: 1337827698}
+  popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
+    type: 3}
   damage: 1
+  resetDelay: 1
 --- !u!61 &1617663984
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26927,6 +27209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0238d1d77d09626428ae485714e03c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smallRingSprite: {fileID: 0}
 --- !u!1 &1844972100
 GameObject:
   m_ObjectHideFlags: 0
@@ -27789,6 +28072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0238d1d77d09626428ae485714e03c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smallRingSprite: {fileID: 0}
 --- !u!114 &2100899871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27833,6 +28117,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2113866447}
   - component: {fileID: 2113866448}
+  - component: {fileID: 2113866450}
+  - component: {fileID: 2113866449}
   m_Layer: 0
   m_Name: Spiky3
   m_TagString: Untagged
@@ -27911,6 +28197,72 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2113866449
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113866446}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2.4, y: 2.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
+--- !u!114 &2113866450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113866446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b24a43a5064c309b3f8eb8f7da694c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  startMovingUp: 1
+  movementRange: 3
+  startPosition: {fileID: 1337827698}
+  popSprite: {fileID: 3997787509715744884, guid: 27226c6b0d963f54cae80c334e7b5687,
+    type: 3}
+  damage: 1
+  resetDelay: 1
 --- !u!114 &2119162991
 MonoBehaviour:
   m_ObjectHideFlags: 0
